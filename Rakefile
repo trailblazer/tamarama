@@ -9,7 +9,7 @@ namespace :db do
   desc "Run migrations up to specified version or to latest."
   task :migrate, [:version] => [:dotenv] do |_, args|
     version = args[:version]
-    migrations_directory = "api-ch-models/lib/models/migrations"
+    migrations_directory = "migrations"
 
     db = DB.connect
 
