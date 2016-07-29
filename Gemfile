@@ -32,7 +32,7 @@ gem "dry-validation"
 group :development, :test do
   gem 'dotenv'
   gem "rack-test"
-  gem "match_json"
+  # gem "match_json"
   gem 'database_cleaner'
 
   gem "minitest"
