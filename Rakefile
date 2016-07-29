@@ -32,3 +32,13 @@ namespace :db do
     # puts User::Persistence.dataset.all.inspect
   end
 end
+
+task :default => :test
+require "rake/testtask"
+
+desc 'Default: run tests.'
+Rake::TestTask.new(:test) do |test|
+  test.libs << 'test'
+  test.pattern = 'test/**/*_test.rb'
+  test.verbose = true
+end
