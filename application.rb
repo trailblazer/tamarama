@@ -28,3 +28,5 @@ Trailblazer::Loader.new.(debug: false, concepts_root: "./concepts/") { |file|
   puts file
   require_relative(file) }
 
+Dir['./controllers/v1/*.rb'].each { |file| require file }
+require_relative "controllers/root"
