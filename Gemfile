@@ -27,11 +27,10 @@ gem "roar", github: "apotonick/roar"
 # gem "trailblazer-loader",   path: "../../trailblazer-loader"
 gem "sequel"
 gem "dry-validation"
-gem "chewy"
+# gem "chewy"
 
 group :development, :test do
   gem 'dotenv'
-  gem "rspec"
   gem "rack-test"
   gem "match_json"
   gem 'database_cleaner'
