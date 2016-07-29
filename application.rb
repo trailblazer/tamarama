@@ -18,10 +18,13 @@ Reform::Form.class_eval do
   # include Disposable::Twin::Property::Hash # FIXME: not inherited!
 end
 
+Dir['./models/*.rb'].each { |file| require file }
+
+# temporary monkey-patches for V1::Operation
+require "trailblazer/operation/model"
+Trailblazer::Operation.send :include, Trailblazer::Operation::Model
+
 Trailblazer::Loader.new.(debug: false, concepts_root: "./concepts/") { |file|
   puts file
   require_relative(file) }
 
-# temporary monkey-patches for V1::Operation
-require "trailblazer/operation/policy"
-# Trailblazer::Operation.send :include, V1::Operation::CurrentUser
