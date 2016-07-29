@@ -9,6 +9,6 @@ DB.connect
 require_relative "../application"
 
 require 'rack/test'
-Dir['./spec/support/*.rb'].each { |file| require file }
+Dir['./test/support/*.rb'].each { |file| require file }
 
 # require "match_json"
