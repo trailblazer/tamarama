@@ -2,8 +2,8 @@ module V1
   module User
     class Endpoints < Grape::API
       resource :users do
-        get  { "Index.(params).to_json" }
-        post { Create.(params) }
+        get  { Index.(params) }
+        post { Create.(request.body.read) }
       end
     end
   end

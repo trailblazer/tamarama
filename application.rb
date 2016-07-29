@@ -22,7 +22,7 @@ Dir['./models/*.rb'].each { |file| require file }
 
 # temporary monkey-patches for V1::Operation
 require "trailblazer/operation/model"
-Trailblazer::Operation.send :include, Trailblazer::Operation::Model
+# Trailblazer::Operation.send :include, Trailblazer::Operation::Model
 
 Trailblazer::Loader.new.(debug: false, concepts_root: "./concepts/") { |file|
   puts file

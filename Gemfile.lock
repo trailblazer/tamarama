@@ -1,0 +1,147 @@
+GIT
+  remote: git://github.com/apotonick/roar.git
+  revision: 5d3c2f15552b09a6b5b01ab87a6ba6df3c16e744
+  specs:
+    roar (1.0.3)
+      representable (>= 2.4.0, < 3.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (5.0.0)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (~> 0.7)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+    axiom-types (0.1.1)
+      descendants_tracker (~> 0.0.4)
+      ice_nine (~> 0.11.0)
+      thread_safe (~> 0.3, >= 0.3.1)
+    builder (3.2.2)
+    coercible (1.0.0)
+      descendants_tracker (~> 0.0.1)
+    concurrent-ruby (1.0.2)
+    database_cleaner (1.5.3)
+    declarative (0.0.8)
+      uber (>= 0.0.15)
+    descendants_tracker (0.0.4)
+      thread_safe (~> 0.3, >= 0.3.1)
+    disposable (0.3.2)
+      declarative (>= 0.0.8, < 1.0.0)
+      representable (>= 2.4.0, <= 3.1.0)
+      uber
+    dotenv (2.1.1)
+    dry-configurable (0.1.7)
+      concurrent-ruby (~> 1.0)
+    dry-container (0.3.4)
+      concurrent-ruby (~> 1.0)
+      dry-configurable (~> 0.1, >= 0.1.3)
+    dry-equalizer (0.2.0)
+    dry-logic (0.3.0)
+      dry-container (~> 0.2, >= 0.2.6)
+      dry-equalizer (~> 0.2)
+    dry-monads (0.0.2)
+    dry-types (0.8.1)
+      concurrent-ruby (~> 1.0)
+      dry-configurable (~> 0.1)
+      dry-container (~> 0.3)
+      dry-equalizer (~> 0.2)
+      dry-logic (~> 0.3, >= 0.3.0)
+      dry-monads (>= 0.0.1)
+      ice_nine (~> 0.11)
+      inflecto (~> 0.0.0, >= 0.0.2)
+    dry-validation (0.9.3)
+      concurrent-ruby (~> 1.0)
+      dry-configurable (~> 0.1, >= 0.1.3)
+      dry-container (~> 0.2, >= 0.2.8)
+      dry-equalizer (~> 0.2)
+      dry-logic (~> 0.3, >= 0.3.0)
+      dry-types (~> 0.8, >= 0.8.1)
+    enumerable-lazy (0.0.1)
+    equalizer (0.0.11)
+    git-version-bump (0.15.1)
+    grape (0.16.2)
+      activesupport
+      builder
+      hashie (>= 2.1.0)
+      multi_json (>= 1.3.2)
+      multi_xml (>= 0.5.2)
+      mustermann19 (~> 0.4.3)
+      rack (>= 1.3.0)
+      rack-accept
+      virtus (>= 1.0.0)
+    grape-roar (0.3.0)
+      grape
+      roar (>= 1.0)
+    hashie (3.4.4)
+    i18n (0.7.0)
+    ice_nine (0.11.2)
+    inflecto (0.0.2)
+    minitest (5.9.0)
+    minitest-line (0.6.3)
+      minitest (~> 5.0)
+    multi_json (1.12.1)
+    multi_xml (0.5.5)
+    mustermann19 (0.4.4)
+      enumerable-lazy
+    pg (0.18.4)
+    rack (1.6.4)
+    rack-accept (0.4.5)
+      rack (>= 0.4)
+    rack-contrib (1.4.0)
+      git-version-bump (~> 0.15)
+      rack (~> 1.4)
+    rack-cors (0.4.0)
+    rack-test (0.6.3)
+      rack (>= 1.0)
+    rake (11.2.2)
+    reform (2.2.1)
+      disposable (>= 0.3.0, < 0.4.0)
+      representable (>= 2.4.0, < 3.1.0)
+      uber (~> 0.0.11)
+    representable (3.0.0)
+      declarative (~> 0.0.5)
+      uber (~> 0.0.15)
+    sequel (4.36.0)
+    thread_safe (0.3.5)
+    trailblazer (1.1.1)
+      declarative
+      reform (>= 2.0.0, < 3.0.0)
+      uber (>= 0.0.15)
+    trailblazer-loader (0.0.9)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
+    uber (0.0.15)
+    virtus (1.0.5)
+      axiom-types (~> 0.1)
+      coercible (~> 1.0)
+      descendants_tracker (~> 0.0, >= 0.0.3)
+      equalizer (~> 0.0, >= 0.0.9)
+    yajl-ruby (1.2.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  database_cleaner
+  dotenv
+  dry-validation
+  grape
+  grape-roar
+  minitest
+  minitest-line
+  pg
+  rack
+  rack-contrib
+  rack-cors
+  rack-test
+  rake
+  reform (= 2.2.1)
+  roar!
+  sequel
+  trailblazer
+  trailblazer-loader
+  yajl-ruby
+
+BUNDLED WITH
+   1.10.6

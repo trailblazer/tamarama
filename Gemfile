@@ -36,4 +36,5 @@ group :development, :test do
   gem 'database_cleaner'
 
   gem "minitest"
+  gem "minitest-line"
 end
