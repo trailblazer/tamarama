@@ -4,8 +4,6 @@ require "stack/env"
 require "stack/db"
 
 require "trailblazer/operation"
-require "trailblazer/operation/model"
-require "trailblazer/operation/representer"
 # require "reform/form/active_model/validations"
 # require "reform/form/coercion"
 
@@ -23,3 +21,11 @@ Trailblazer::Loader.new.(debug: false, concepts_root: "./concepts/") { |file|
   puts file
   require_relative(file) }
 
+
+module Exp
+  class Application < Sinatra::Base
+    get "/expenses/new" do
+
+    end
+  end
+end
