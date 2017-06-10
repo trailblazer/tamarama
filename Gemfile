@@ -7,7 +7,6 @@ gem 'pg'
 gem "reform"
 gem "trailblazer"
 gem "trailblazer-loader"
-gem "roar"
 gem "sequel"
 gem "dry-validation"
 
