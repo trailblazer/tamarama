@@ -13,7 +13,7 @@ namespace :db do
     version              = args[:version]
     migrations_directory = "migrations"
 
-    db = DB.connect
+    db = Tamarama::DB::Sequel.()
 
     message = if args[:version].nil?
                 Sequel::Migrator.run(db, migrations_directory)
@@ -29,7 +29,8 @@ namespace :db do
   task :debug => [:dotenv] do
     require "application"
 
-    db = DB.connect
+    db = Tamarama::DB::Sequel.()
+
     puts "=== DB: #{db.uri}"
     puts db.schema(:users).inspect
     # puts User::Persistence.db_schema
